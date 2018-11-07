@@ -9,11 +9,8 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Shopware\Components\Logger;
 
 /**
- * Ice Flat for small Baskets
- * Ticket: https://redmine.rocket-media.de/redmine/issues/6265
- *
- * Class RmIce
- * @package RmIce
+ * Class SubscriberTest
+ * @package SubscriberTest
  */
 
 class SubscriberTest extends Plugin
