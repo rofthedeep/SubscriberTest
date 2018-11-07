@@ -1,6 +1,6 @@
 <?php
 
-namespace RmIce\Tests\Functional\Cart;
+namespace SubscriberTest\Tests\Functional\Cart;
 
 use Enlight_Controller_Request_RequestHttp;
 use Shopware\Components\Random;
