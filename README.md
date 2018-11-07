@@ -10,3 +10,7 @@ Aktuell ist folgendes Problem vorhanden:
 In der Konfigurationsdatei von PHPUnit kann ein Parameter ```processIsolation="true"``` angegeben werden. Dieser bewirkt, dass die bootstrap.php bei jedem Test neu gestartet wird. 
 Mit dieser Konfiguration werden nun alle Events korrekt getriggert und ausgeführt.
 
+## Hinweis 
+
+Die Tests werden in einer über Composer installierten Shopware Version ausgeführt. Wurde Shopware über den Standard-Installer aufgesetzt, muss die bootsrap.php eine andere autoload.php Datei bedingen (vendor/autoload.php). Auch in der config.php Datei muss der Pfad entsprechend umgestellt werden.
+
