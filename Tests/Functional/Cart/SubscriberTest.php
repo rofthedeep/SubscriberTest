@@ -36,6 +36,18 @@ class SubscriberTest extends \Enlight_Components_Test_Plugin_TestCase
         $this->dispatch('/checkout/addArticle');
     }
 
+    public function testThree()
+    {
+        error_log('--- test three ---');
+        $this->reset();
+        $this->resetRequest();
+        Shopware()->Session()->offsetSet('sessionId', '');
+        $this->generateBasketSession();
+        $this->Request()->setMethod('POST');
+        $this->Request()->setHeader('User-Agent', self::USER_AGENT);
+        $this->dispatch('/checkout/shippingPayment');
+    }
+
     private function generateBasketSession()
     {
         $this->reset();

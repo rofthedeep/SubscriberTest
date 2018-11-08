@@ -4,7 +4,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          processIsolation="true"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.3/phpunit.xsd">
-    <testsuite name="RmIce Test Suite">
+    <testsuite name="Subscriber Test Suite">
         <directory>./Functional</directory>
     </testsuite>
     <filter>

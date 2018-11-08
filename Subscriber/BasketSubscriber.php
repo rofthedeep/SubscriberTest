@@ -24,7 +24,8 @@ class BasketSubscriber implements SubscriberInterface
     public static function getSubscribedEvents()
     {
         return [
-            'sBasket::sUpdateArticle::after' => 'onUpdateArticle'
+            'sBasket::sUpdateArticle::after' => 'onUpdateArticle',
+            'Shopware_Controllers_Frontend_Checkout::shippingPaymentAction::before' => 'onShippingPaymentAction',
         ];
     }
 
@@ -36,5 +37,9 @@ class BasketSubscriber implements SubscriberInterface
     public function onUpdateArticle(\Enlight_Event_EventArgs $args)
     {
         error_log('in subscribed event: on update article');
+    }
+
+    public function onShippingPaymentAction(\Enlight_Hook_HookArgs $args) {
+        error_log('in subscribed hook: on shipping payment action');
     }
 }
