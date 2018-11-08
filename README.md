@@ -18,3 +18,7 @@ Die Tests werden in einer über Composer installierten Shopware Version ausgefü
 
 Dass die Test nicht korrekt zurückgesetzt werden, ist aktuell auch in folgendem Issue festgehalten: https://github.com/shopware/shopware/pull/1376 Sobald der Fix durch ist, sollte es auch ohne ```processIsolation="true"``` funktionieren.
 
+## Problem 2
+
+Im aktuellen Testfall ist es wohl auch so, dass Hooks nicht ausgeführt werden. Im Beispiel wurde dafür der TestCase3 hinzugefügt.
+
